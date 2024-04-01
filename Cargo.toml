@@ -1,0 +1,12 @@
+[package]
+name = "sslocal-http-lib"
+version = "0.1.0"
+edition = "2021"
+[lib]
+name = "sslocal"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+[dependencies]
+tokio = {version = "1.37.0"}
+shadowsocks-service = { version = "1.18.2",features = ["local","local-http"] }
+lazy_static = "1.4.0"
